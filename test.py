@@ -49,7 +49,7 @@ if __name__ == '__main__':
 
     #1. create a NN model 
     device = 'cuda' if torch.cuda.is_available else "cpu"  
-	print(device)
+    print(device)
     loss_fn = nn.CrossEntropyLoss()       
     model = NeuralNetwork().to(device)
     print(model)
