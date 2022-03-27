@@ -3,6 +3,7 @@ from torch import nn
 import skimage.io
 import numpy as np
 from torchvision.transforms import ToTensor, Lambda, Compose
+import time
 
 #1. build a NN
 class NeuralNetwork(nn.Module):
@@ -57,3 +58,5 @@ if __name__ == '__main__':
     print('\nstart demo inference ...')
     img = skimage.io.imread('test.jpg')
     inference(img, model, loss_fn, device)
+    
+    time.sleep(3600)
