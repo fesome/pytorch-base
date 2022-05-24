@@ -3,7 +3,7 @@ FROM anibali/pytorch:1.10.2-cuda11.3-ubuntu20.04
 WORKDIR /app
 
 RUN mkdir -p ~/.pip
-COPY pip.conf ~/.pip
+COPY pip.conf /home/user/.pip/
 
 COPY requirements.txt /app
 
